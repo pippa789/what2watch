@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 
 const Nav = styled.div`
-height: 100px;
+height: 50px;
 width: auto;
 background-color: black;
+font-family: 'Poppins', sans-serif;
 `
 
 
@@ -16,12 +17,16 @@ function Navigation() {
     const LinkStyle = {
     color: "white",
     margin: "20px",
+    textDecoration: "none",
+    display: 'flex',
+    alignItems: 'center'
 };
 
     const navStyle = { 
     display: "flex",  
-    flexdirection: "row",
-    justifycontent: "space-between", 
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "center", 
     margin: "0px",
 };   
 

@@ -10,10 +10,17 @@ import '../index.css'
     //     Modal(movie.title + "     " +movie.overview)}
   return (
       <>
-      <Modal isOpen={modalOpen}>
+      <Modal className='modal' isOpen={modalOpen}>
       <img src={"https://image.tmdb.org/t/p/w200" + movie.backdrop_path} alt="" />
       <p>{movie.overview}</p>
-      <button onClick={() => setModalOpen(false)}>close</button>  
+      <motion.button
+        whileHover={{
+            scale: 1.2,
+            transition: { duration: 0.5 },
+          }}
+        whileTap={{ scale: 0.9 }} 
+        onClick={() => setModalOpen(false)}
+      >close</motion.button>  
       </Modal>
     < motion.div className='movie-card'>
     <div>
@@ -21,7 +28,13 @@ import '../index.css'
     </div>
     <div>
      <img src={"https://image.tmdb.org/t/p/w200" + movie.backdrop_path} alt="" />
-        <button onClick={()=> setModalOpen(true)}>Description</button>
+        <motion.button 
+        whileHover={{
+            scale: 1.2,
+            transition: { duration: 1 },
+          }}
+        whileTap={{ scale: 0.9 }} 
+        onClick={()=> setModalOpen(true)}>Description</motion.button>
     </div>
     </motion.div>
     </>

@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;1,600&family=Raleway:wght@100&family=Righteous&family=Stint+Ultra+Condensed&family=Ubuntu:wght@300;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;0,900;1,600&family=Raleway:wght@100&family=Righteous&family=Stint+Ultra+Condensed&family=Ubuntu:wght@300;700&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
 * {
   box-sizing: border-box;
 }
@@ -8,62 +11,67 @@ body {
   padding: 0;
 }
 .popular-movies{
-  margin: 1% 10% 0 10%;
+  margin: 5% 10% 0 10%;
   padding-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.60fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
+  font-family: 'Poppins', sans-serif;
+ 
+  
 }
 
 .movie-card{
-  font-size: 10px;
+  font-size: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #050100;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 0px 20px 15px;
+  color:#262424;
+  font-weight: 300;
+  
 }
 
 .card{
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px 10px #050100 ;
+  align-items: center;
+  
 }
 
 button{
-  color: white;
-  background-color: black;
+  display: flex-row;
+  justify-content: space-between;
+  color: #262424;
+  background-color: rgba(255, 255, 255, 0.008) ;
   border: none;
-  padding: 7px;
+  padding:10px 70px 10px 70px;
   border-radius: 3px;
-  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2% 10% 2% 2%
 
 }
 button:hover{
   color: blue;
-}
-
-.backdrop{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(33, 25, 25);
-  opacity: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 900;
 }
 
 .modal{
-  /* clamp and min make the div mobile responsive */
-  width: clamp(50%, 700px, 90%);
-  height: min(50%, 300px);
-  margin: auto;
-  padding: 0 2rem;
+ 
+  margin-top: 50px ;
+  padding: 0rem 2rem;
   border-radius: 12px;
+  background-color: #262424;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px 30px 50px 30px
+
 }
