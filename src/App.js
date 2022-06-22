@@ -51,13 +51,13 @@ setFiltered(movies.results);
   return (
     <Container >
 
-      <Router>
+      {/* <Router>
       <Navigation/>
         <Routes>
           <Route exact path = "/About" element = {<About/>} />
         </Routes>
-      </Router>
-      <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre} />
+      </Router> */}
+      <Filter className='filter' popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre} />
       <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} layout className='popular-movies'>
        { filtered.map((movie) => {
          return <MovieContainer key={movie.id} movie={movie} />
